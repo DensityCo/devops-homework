@@ -18,7 +18,7 @@ For delivery of this assignment, we'd like to see:
 - A Dockerfile for each application
 - Framework for deploying containers to a group of nodes
 - Document how you will use continuous delivery to ship to a production environment
-- Scripts involved with automatically scaling the application and nodes horizontally based on requests
+- Scripts and/or docs involved with automatically scaling the application and nodes horizontally based on requests
 
 Create a new repo using your Github account with a unique name and send us the final product!
 
