@@ -1,24 +1,31 @@
 # Density DevOps Homework Assignment
 
 ## Goal
-Your goal is to illustrate how you would deploy and scale two applications (App A and App B) to incoming requests. 
+
+Your goal is to show how you would build, test, scale, and deploy the included application on [Hashicorp Nomad](https://www.nomadproject.io/).
+
 
 ## Assignment
+
 Your task is to accomplish the following:
 
-- Deploy the sample python applications to a cluster of nodes using a container orchestration framework
-- Application A should be publicly accessible over HTTPS
-- Application B should not be accessible via the public internet
-- Please show how you would auto-scale the number of nodes and containers as the number of requests increases
+- Build a small Nomad test cluster either locally or or in the cloud, single node is fine.
+- Build Docker files for both sample applications (applications must return correct results).
+- Build a deployment mechanism for Nomad's [docker driver](https://www.nomadproject.io/docs/drivers/docker), this should include basic .hcl files for both applications.
+- Create a plan for continuous delivery for Nomad, discuss the specific tools you'd look at and your evaluation criteria for them.
+- Discuss options for Nomad auto-scaling using the [Nomad Autoscaler](https://www.nomadproject.io/docs/autoscaling), [Levant](https://github.com/hashicorp/levant), or tooling of your choice.
+
 
 ## Don't Let the Dog Eat Your Homework
 
 For delivery of this assignment, we'd like to see:
 
 - A Dockerfile for each application
-- Framework for deploying containers to a group of nodes
-- Document how you will use continuous delivery to ship to a production environment
-- Scripts and/or docs involved with automatically scaling the application and nodes horizontally based on requests
+- Simple implementation of Nomad (locally or in a public cloud)
+- Repeatable deployment mechanism for each application
+- Continuous Delivery plan for the Nomad ecosystem
+- Auto-scaling plan for the Nomad ecosystem
+- Brief discussion of Nomad as a container platform - note strengths and weaknesses vs more common options (e.g. Kubernetes)
 
 Create a new repo using your Github account with a unique name and send us the final product!
 
@@ -29,7 +36,7 @@ Create a new repo using your Github account with a unique name and send us the f
 - Please document your thought-processes and use well-written git commit messages to show your progress
 - Feel free to change the python application and its requirements in any way you see fit
 - We are purposefully not being overly prescriptive in this assignment, as we want you to think creatively about the solution
-- This assignment should take less than 3 hours to complete
+- This assignment should take less than 5 hours to complete
 - If you get stuck or need more information, please reach out for clarity
 - Have fun!
 
