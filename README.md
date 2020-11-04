@@ -36,7 +36,7 @@ Create a new repo using your Github account with a unique name and send us the f
 - Please document your thought-processes and use well-written git commit messages to show your progress
 - Feel free to change the python application and its requirements in any way you see fit
 - We are purposefully not being overly prescriptive in this assignment, as we want you to think creatively about the solution
-- This assignment should take less than 3 hours to complete
+- This assignment should take less than 5 hours to complete
 - If you get stuck or need more information, please reach out for clarity
 - Have fun!
 
