@@ -9,11 +9,11 @@ Your goal is to show how you would build, test, scale, and deploy the included a
 
 Your task is to accomplish the following:
 
-- Build a small Nomad test cluster either locally or or in the cloud, single node is fine
-- Build Docker files for both sample applications (applications must return correct results, see getting started below)
-- Build a deployment mechanism for Nomad's [docker driver](https://www.nomadproject.io/docs/drivers/docker), this should include basic .hcl files for both applications
-- Create a plan for continuous delivery of the application to Nomad, discuss the specific tools you'd look at and your evaluation criteria for them
-- Discuss options for Nomad auto-scaling using the [Nomad Autoscaler](https://www.nomadproject.io/docs/autoscaling), [Levant](https://github.com/hashicorp/levant), or tooling of your choice
+- Build a small Nomad test cluster either locally or or in the cloud, single node is fine.
+- Build Docker files for both sample applications (applications must return correct results).
+- Build a deployment mechanism for Nomad's [docker driver](https://www.nomadproject.io/docs/drivers/docker), this should include basic .hcl files for both applications.
+- Create a plan for continuous delivery for Nomad, discuss the specific tools you'd look at and your evaluation criteria for them.
+- Discuss options for Nomad auto-scaling using the [Nomad Autoscaler](https://www.nomadproject.io/docs/autoscaling), [Levant](https://github.com/hashicorp/levant), or tooling of your choice.
 
 
 ## Don't Let the Dog Eat Your Homework
