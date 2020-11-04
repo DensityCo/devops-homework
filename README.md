@@ -2,7 +2,7 @@
 
 ## Goal
 
-Your goal is to show how you would build, test, scale, and deploy the included application on [Hashicorp Nomad](https://www.nomadproject.io/)
+Your goal is to show how you would build, test, scale, and deploy the included application on [Hashicorp Nomad](https://www.nomadproject.io/).
 
 
 ## Assignment
