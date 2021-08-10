@@ -1,0 +1,46 @@
+version: '3.2'
+services:
+
+
+  ## Datastores
+
+  db:
+    image: timescale/timescaledb:latest-pg11
+    environment:
+      PGDATA: "/var/lib/data/"
+      POSTGRES_USER: "density"
+      POSTGRES_PASSWORD: "density"
+    ports:
+      - 5432:5432
+
+  zookeeper:
+    image: wurstmeister/zookeeper
+    ports:
+      - 2181:2181
+
+  kafka:
+    image: wurstmeister/kafka:2.12-2.2.1
+    environment:
+      KAFKA_ZOOKEEPER_CONNECT: "zookeeper:2181"      
+      KAFKA_OFFSETS_TOPIC_REPLICATION_FACTOR: 1
+      KAFKA_BROKER_ID: 1
+      KAFKA_LISTENERS: "PLAINTEXT://kafka:9092"
+      KAFKA_ADVERTISED_LISTENERS: "PLAINTEXT://kafka:9092"
+      KAFKA_AUTO_CREATE_TOPICS_ENABLE: "TRUE"
+    depends_on:
+      - zookeeper
+    ports:
+      - 9092:9092
+      - 29092:29092
+
+  ## Applications
+  
+  app_a:
+    image: app_a:0
+    ports:
+      - 5000:5000
+
+  app_b:
+    image: app_b:0
+    ports:
+      - 5001:5001
