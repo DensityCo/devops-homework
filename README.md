@@ -10,7 +10,7 @@ Your task is to accomplish the following:
 
 - Dockerize the two included applications.
 - Apply OWASP image hardening best practices to both containers.
-- Set up automated local static image scans of the resulting images using a tool like [Snyk](https://snyk.io/)
+- Set up automated local static image scans of the resulting images using a tool like [Snyk](https://snyk.io/).
 - Create a basic Kubernetes deployment for both applications.  The deployment should incorporate any OWASP guidance for running containers.
 - Ensure that all steps (build, scan, and local kubernetes deployment) can be easily performed using the included [task](https://github.com/go-task/task) file.
 
@@ -18,8 +18,8 @@ Your task is to accomplish the following:
 
 For delivery of this assignment, we'd like to see:
 
-- Working data paths for both pipeline destinations
-- Reproducible local workflow (e.g., add your stages to docker compose)
+- Working data paths for both pipeline destinations.
+- Reproducible local workflow (e.g., add your stages to docker compose).
 
 ## Bonus Points for Any of the Following
 
@@ -33,12 +33,12 @@ Create a new repo using your Github account with a unique name and send us the f
 
 ## Notes
 
-- Please do not fork or submit a PR to this repo
-- Please document your thought-processes and use well-written git commit messages to show your progress
-- Feel free to change the python application and its requirements in any way you see fit
-- We are purposefully not being overly prescriptive in this assignment, as we want you to think creatively about the solution
-- This assignment should take less than 5 hours to complete
-- If you get stuck or need more information, please reach out for clarity
+- Please do not fork or submit a PR to this repo.
+- Please document your thought-processes and use well-written git commit messages to show your progress.
+- Feel free to change the python application and its requirements in any way you see fit.
+- We are purposefully not being overly prescriptive in this assignment, as we want you to think creatively about the solution.
+- This assignment should take less than 5 hours to complete.
+- If you get stuck or need more information, please reach out for clarity.
 - Have fun!
 
 ## Getting Started in Local Development
@@ -48,8 +48,7 @@ Please create and source your virtualenv before beginning.
 Running the apps locally:
 
 ```bash
-task build
-task up
+task run-app
 ```
 
 Making a request
