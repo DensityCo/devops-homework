@@ -18,8 +18,10 @@ Your task is to accomplish the following:
 
 For delivery of this assignment, we'd like to see:
 
-- Working data paths for both pipeline destinations.
-- Reproducible local workflow (e.g., add your stages to docker compose).
+- Dockerfiles for both included applications with OWASP guidelines applied to the image.
+- A Task in the Taskfile that automates local static image scans of the resulting images.
+- A Kubernetes deployment file that deploys both apps using OWASP runtime guidelines.
+- All work orchestrated through the included Taskfile.yaml, documentation [here](https://taskfile.dev/#/)
 
 ## Bonus Points for Any of the Following
 
