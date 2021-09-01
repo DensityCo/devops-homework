@@ -2,34 +2,17 @@
 
 ## Goal
 
-This repo includes a very simple sample application which we want to gain some data insights from. We want to understand user behavior patterns and look for common failed requests using a combination of data analysis tools.
+This repo includes a very simple application which we want to dockerize and secure.  Security standards should be taken from the [OWASP Cheat Sheet Series](https://cheatsheetseries.owasp.org/index.html) and should pertain to Docker image security only.
 
 ## Assignment
 
 Your task is to accomplish the following:
 
-- Use the included Kafka and TimescaleDB docker containers to build a basic data pipeline
-- The pipeline should have two paths, one to the timescaledb and one to a **public S3 bucket** you'll use as a data lake.
-- Push the request / response headers and payload for each request made to app_a and app_b to both systems.
-
-## Data Formats
-
-Your jobs should use the following schemas:
-
-### TimescaleDB
-
-Create a database record for each request with:
-
-* IP Address of the request
-* Parameters
-* Method
-* Response Code
-
-### S3
-
-Push the raw request / response to a bucket with the following path:
-
-`<s3_bucket>/<datestamp-daily>/<timestamp-hourly>/<ip-address>`
+- Dockerize the two included applications.
+- Apply OWASP image hardening best practices to both containers.
+- Set up automated local static image scans of the resulting images using a tool like [Snyk](https://snyk.io/)
+- Create a basic Kubernetes deployment for both applications.  The deployment should incorporate any OWASP guidance for running containers.
+- Ensure that all steps (build, scan, and local kubernetes deployment) can be easily performed using the included [task](https://github.com/go-task/task) file.
 
 ## Don't Let the Dog Eat Your Homework
 
@@ -40,10 +23,10 @@ For delivery of this assignment, we'd like to see:
 
 ## Bonus Points for Any of the Following
 
-- An architecture diagram of your pipeline setup
-- discussion of data lake query tools and patterns you'd use to consume the data
-- TimescaleDB continuous aggregations along 5 minute intervals
-- Any reflections on how you'd improve this exercise
+- Separate build and deploy stages in your Dockerfiles.
+- Automated local Kubernetes environment for testing.
+- Discuss how you would integrate regular scans into a CI pipeline, along with any caveats.
+- Discuss how you would expose and secure this application publicly on Kubernetes.
 
 Create a new repo using your Github account with a unique name and send us the final product!
 

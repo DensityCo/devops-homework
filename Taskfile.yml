@@ -1,28 +1,18 @@
+---
+
 version: '3'
 
 output: prefixed
 
 tasks:
 
-  build:
-    deps: [build-container-a, build-container-b]
+  run-app:
+    deps: [app-a, app-b]
 
-  up:
-    cmds: 
-      - docker-compose up -d
-
-  status:
+  app-a:
     cmds:
-      - docker-compose ps
+      - python apps/app_a/app_a.py
 
-  down:
+  app-b:
     cmds:
-      - docker-compose down 
-
-  build-container-a:
-    cmds:
-      - docker build -t app_a:0 Docker/app_a
-
-  build-container-b:
-    cmds:
-      - docker build -t app_b:0 Docker/app_b
+      - python apps/app_b/app_b.py
