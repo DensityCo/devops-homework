@@ -12,9 +12,7 @@ Your task is to accomplish the following:
 - Build a small Nomad test cluster either locally or or in the cloud, single node is fine.
 - Build Docker files for both sample applications (applications must return correct results).
 - Build a deployment mechanism for Nomad's [docker driver](https://www.nomadproject.io/docs/drivers/docker), this should include basic .hcl files for both applications.
-- Create a plan for continuous delivery for Nomad, discuss the specific tools you'd look at and your evaluation criteria for them.
-- Discuss options for Nomad auto-scaling using the [Nomad Autoscaler](https://www.nomadproject.io/docs/autoscaling), [Levant](https://github.com/hashicorp/levant), or tooling of your choice.
-
+- Brainstorm a plan for continuous delivery for Nomad, discuss the specific tools you'd look at and your evaluation criteria for them.
 
 ## Don't Let the Dog Eat Your Homework
 
@@ -23,8 +21,7 @@ For delivery of this assignment, we'd like to see:
 - A Dockerfile for each application
 - Simple implementation of Nomad (locally or in a public cloud)
 - Repeatable deployment mechanism for each application
-- Continuous Delivery plan for the Nomad ecosystem
-- Auto-scaling plan for the Nomad ecosystem
+- Notes on Continuous Delivery for the Nomad ecosystem
 - Brief discussion of Nomad as a container platform - note strengths and weaknesses vs more common options (e.g. Kubernetes)
 
 Create a new repo using your Github account with a unique name and send us the final product!
